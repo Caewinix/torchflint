@@ -1,14 +1,14 @@
 [project]
 name = "torchflint"
-version = "0.0.1-beta.12"
+version = "0.0.1-beta.13"
 authors = [
   { name = "Caewinix", email = "Caewinix@yeah.net" },
 ]
 dependencies = [
   "torch>=1.6.0",
   "numpy",
-  "array-like-generic",
-  "pyreflex"
+  "cachetools",
+  "pyreflex>=0.0.1b13"
 ]
 description = "This Python module provides a collection of utility functions designed for advanced tensor manipulation using PyTorch. It includes functions for applying operations along specific dimensions, mapping values to new ranges, and generating linearly spaced tensors, among others."
 readme = "README.md"
