@@ -10,7 +10,7 @@ dependencies = [
   "cachetools",
   "pyreflex>=0.0.1b13"
 ]
-description = "This Python module provides a collection of utility functions designed for advanced tensor manipulation using PyTorch. It includes functions for applying operations along specific dimensions, mapping values to new ranges, and generating linearly spaced tensors, among others."
+description = "TorchFlint is a collection of advanced utility functions designed for tensor manipulation within the PyTorch ecosystem. It provides granular control over high-dimensional data processing, bridging the gap between high-level neural modules and low-level tensor operations."
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
