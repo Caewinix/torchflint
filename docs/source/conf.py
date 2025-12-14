@@ -7,7 +7,24 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import os
 import sys
+from unittest.mock import MagicMock
+
+
 sys.path.insert(0, os.path.abspath('../../src'))
+
+
+class Mock(MagicMock):
+    @classmethod
+    def __getattr__(cls, name):
+        return MagicMock()
+
+
+MOCK_MODULES = ['torch', 'numpy', 'cachetools', 'pyreflex']
+for mod_name in MOCK_MODULES:
+    sys.modules[mod_name] = Mock()
+
+
+sys.modules['torch'].__version__ = '2.1.0'
 
 
 project = 'TorchFlint'
