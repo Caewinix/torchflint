@@ -21,7 +21,10 @@ class Mock(MagicMock):
 
 MOCK_MODULES = ['torch', 'numpy', 'cachetools', 'pyreflex']
 for mod_name in MOCK_MODULES:
-    sys.modules[mod_name] = Mock()
+    mock_module = Mock()
+    mock_module.__name__ = mod_name
+    mock_module.__all__ = []
+    sys.modules[mod_name] = mock_module
 
 
 sys.modules['torch'].__version__ = '2.1.0'
