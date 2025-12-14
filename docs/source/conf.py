@@ -16,7 +16,7 @@ sys.path.insert(0, os.path.abspath('../../src'))
 class Mock(MagicMock):
     @classmethod
     def __getattr__(cls, name):
-        return MagicMock()
+        return Mock()
 
 
 MOCK_MODULES = ['torch', 'numpy', 'cachetools', 'pyreflex']
