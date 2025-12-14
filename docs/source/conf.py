@@ -7,18 +7,26 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import os
 import sys
-from unittest.mock import MagicMock
 
 
 sys.path.insert(0, os.path.abspath('../../src'))
 
 
-class Mock(MagicMock):
+class Mock:
+    def __init__(self, *args, **kwargs):
+        pass
+
+    def __call__(self, *args, **kwargs):
+        return Mock()
+
     def __getattr__(self, name):
-        try:
-            return super().__getattr__(name)
-        except:
-            return Mock()
+        return Mock()
+
+    def __getitem__(self, key):
+        return Mock()
+    
+    def __setitem__(self, key, value):
+        pass
 
 
 MOCK_MODULES = ['torch', 'numpy', 'cachetools', 'pyreflex']
