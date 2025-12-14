@@ -7,21 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import os
 import sys
-from unittest.mock import MagicMock
-
-
 sys.path.insert(0, os.path.abspath('../../src'))
-
-
-MOCK_MODULES = ['torch', 'numpy', 'cachetools', 'pyreflex']
-for mod_name in MOCK_MODULES:
-    mock_module = MagicMock()
-    mock_module.__name__ = mod_name
-    mock_module.__all__ = []
-    sys.modules[mod_name] = mock_module
-
-
-sys.modules['torch'].__version__ = '2.0.0'
 
 
 project = 'TorchFlint'
@@ -41,7 +27,7 @@ extensions = [
 templates_path = ['_templates']
 exclude_patterns = []
 
-autodoc_mock_imports = ["torch", "numpy", "cachetools", "pyreflex"]
+autodoc_mock_imports = ["numpy", "cachetools", "pyreflex"]
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
