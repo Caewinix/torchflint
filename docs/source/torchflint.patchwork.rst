@@ -4,10 +4,10 @@ torchflint.patchwork
 Modules
 ----------
 
-torchflint.patchwork.patches
+torchflint.patchwork
 -----------------------------------
 
-.. automodule:: torchflint.patchwork.patches
+.. automodule:: torchflint.patchwork
    :members:
    :undoc-members:
    :show-inheritance:
