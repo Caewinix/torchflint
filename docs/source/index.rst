@@ -14,7 +14,7 @@ Welcome to TorchFlint
    :maxdepth: 1
    :caption: Introduction
 
-   intro
+   introduction
 
 .. toctree::
    :maxdepth: 1
@@ -26,8 +26,8 @@ Welcome to TorchFlint
    :maxdepth: 1
    :caption: Tutorials & Applications
 
-   guides/buffer_management
-   guides/patchwork_ops
+   guides/buffer
+   guides/patchwork
 
 .. toctree::
    :maxdepth: 2
@@ -40,4 +40,3 @@ Welcome to TorchFlint
    :caption: Project Information
 
    citation
-   license
