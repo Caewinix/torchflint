@@ -22,7 +22,7 @@ Using the high-performance patch functions:
     cumulative_output = patchwork.fold_stack(patches, stride=2)
     average_output = patchwork.fold_space(patches, stride=2)
 
-Convolution (Standard & Masked)
+Convolution
 -------------------------------
 
 Perform convolutions, optionally applying a mask to handle sparse data or boundary validity.
