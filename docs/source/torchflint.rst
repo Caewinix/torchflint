@@ -1,7 +1,7 @@
 TorchFlint API
 ==================
 
-.. automodule:: torchflint.functional
+.. automodule:: torchflint
    :members:
    :undoc-members:
    :show-inheritance:
