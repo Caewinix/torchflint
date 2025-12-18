@@ -13,7 +13,7 @@ sys.path.insert(0, os.path.abspath('../../src'))
 project = 'TorchFlint'
 copyright = '2025, Caewinix'
 author = 'Caewinix'
-release = '0.0.1b16'
+release = '0.0.1b16.post1.dev1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
