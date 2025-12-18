@@ -20,7 +20,7 @@ Simplifies the registration of non-parameter states in `nn.Module` using a Pytho
 
 A core module for handling N-dimensional patches, serving as the foundation for convolution and pooling operations.
 
-* **High Performance**: Includes `torchflint.patchwork.unfold_space`, `torchflint.patchwork.fold_space`, and `torchflint.patchwork.fold_stack`. Notably, **`torchflint.patchwork.fold_stack` is faster than the official `torch.nn.functional.fold`** in many scenarios.
+* **High Performance**: Includes `torchflint.patchwork.unfold_space`, `torchflint.patchwork.fold_space`, and `torchflint.patchwork.fold_stack`. Notably, the speed of **`torchflint.patchwork.fold_stack` is close to the official `torch.nn.functional.fold` (only support images less than 2D)** in many scenarios.
 * **N-Dimensional Support**: Works seamlessly on 1D, 2D, and 3D+ spatial data.
 * **Functional Convolution & Pooling**: Built upon the `torchflint.patchwork` module, many functions expose the intermediate steps of convolution and pooling, like `torchflint.patchwork.conv_patches`, `torchflint.patchwork.masked_conv`, `torchflint.patchwork.pool`, `torchflint.patchwork.max_pool`, and `torchflint.patchwork.masked_avg_pool`. However, although many of them works well in some tests, but limited (masked version was only tested for their forward process), they will be tested more rigorously in the future.
 
