@@ -12,7 +12,7 @@ Simplifies the registration of non-parameter states in ``nn.Module`` using a Pyt
 
 2. Patchwork & High Performance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-A core module for handling N-dimensional patches. Notably, **torchflint.patchwork.fold_stack is faster than the official torch.nn.functional.fold** in many scenarios.
+A core module for handling N-dimensional patches. Notably, the speed of **`torchflint.patchwork.fold_stack` is close to the official `torch.nn.functional.fold` (only support images less than 2D)** in many scenarios.
 
 3. Functional Convolution & Pooling
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
