@@ -12,7 +12,7 @@ Modules
 .. toctree::
    :maxdepth: 4
 
-   torchflint.image
    torchflint.nn
    torchflint.patchwork
+   torchflint.image
    torchflint.utils
