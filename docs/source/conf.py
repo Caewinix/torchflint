@@ -13,7 +13,7 @@ sys.path.insert(0, os.path.abspath('../../src'))
 project = 'TorchFlint'
 copyright = '2025, Caewinix'
 author = 'Caewinix'
-release = '0.0.1b16.post1.dev1'
+release = '0.0.1b16.post1.dev2'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -27,7 +27,7 @@ extensions = [
 templates_path = ['_templates']
 exclude_patterns = []
 
-autodoc_mock_imports = ["numpy", "cachetools", "pyreflex"]
+autodoc_mock_imports = ["pyreflex"]
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
