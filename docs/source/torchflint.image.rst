@@ -1,7 +1,7 @@
 torchflint.image
 ========================
 
-.. automodule:: torchflint.image.functional
+.. automodule:: torchflint.image
    :members:
    :undoc-members:
    :show-inheritance:
