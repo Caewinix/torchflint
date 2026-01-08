@@ -1,11 +1,12 @@
 [project]
 name = "torchflint"
-version = "0.0.1b16.post1.dev2"
+version = "0.0.1b16.post1.dev3"
 authors = [
   { name = "Caewinix", email = "Caewinix@yeah.net" },
 ]
 dependencies = [
   "torch>=1.6.0",
+  "torchvision",
   "pyreflex>=0.0.1b13"
 ]
 description = "TorchFlint is a collection of advanced utility functions designed for tensor manipulation within the PyTorch ecosystem. It provides granular control over high-dimensional data processing, bridging the gap between high-level neural modules and low-level tensor operations."
